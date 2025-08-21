@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Russo One', sans-serif; /* Wrap in quotes and add a fallback font */
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated-border {
+  position: relative;
+  display: inline-block;
+  border: 5px solid transparent;
+  border-radius: 12px; /* Match image's border-radius */
+  background: conic-gradient(
+    from 0deg,
+    cyan,
+    red,
+    cyan,
+    red,
+    cyan
+  );
+  background-size: 300% 300%; /* Makes the animation more noticeable */
+  animation: snakeAnimation 3s linear infinite;
+}
+
+@keyframes snakeAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 300% 300%;
+  }
+}
+
+.animated-border img {
+  display: block;
+  border-radius: 12px; /* Match the border */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: white; /* Prevents gradient overlap inside */
+}
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+body {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+.overflow-x-auto {
+  -ms-overflow-style: none;  /* for Internet Explorer 10+ */
+  scrollbar-width: none;  /* for Firefox */
+}
+
+
+
+
+
+
+
+
