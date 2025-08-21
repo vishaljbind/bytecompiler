@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 {
   "rewrites": [
     {
@@ -9,17 +7,3 @@
     }
   ]
 }
-=======
->>>>>>> 14729f0 (frojects added)
-{
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
-}
-<<<<<<< HEAD
-=======
->>>>>>> c501a68 (frojects added)
->>>>>>> 14729f0 (frojects added)
